@@ -10,6 +10,12 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import 'normalize';
+
+* {
+    box-sizing: border-box;   
+}
+
 html,
 button,
 input,
@@ -19,7 +25,8 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 100%;
+    font-size: 1rem;
     line-height: 1.4;
 }
 
@@ -98,18 +105,7 @@ textarea {
    ========================================================================== */
 
 
-@import 'normalize';
-
-
-$green: green;
-
-h1 {
-    color: $green;
-}
-
-.style {
-    transform: scale(0.8);
-}
+@import 'base-fonts';
 
 
 

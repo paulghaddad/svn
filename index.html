@@ -6,7 +6,7 @@ layout: default
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--<div>[if gt IE 8]><!</div>--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +24,99 @@ layout: default
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="page-wrap">
+            
+            <header class="main-header">
+                <h1>37signals</h1>
+                <h2>You're reading Signal vs. Noise, a publication about the web by 37signals since 1999.</h2>
+                <p>Happy Tuesday.</p>
+            </header>
+
+            <section class="blog-posts">
+
+                <article class="post">
+
+                    <h1><a href="post-link">Server generated web responses</a></h1>
+                    <h2><a href="author-link">David</a> wrote this on <time datetime="2014-01-21">Jan 21, 2014</time>/ <a href="">13 Comments</a></h2> 
+
+                    <p>The majority of Ajax operations in Basecamp are handled with Server-generated JavaScript Responses (SJR). It works like this:</p>
+
+                    <ol>
+                        <li>Form is submitted via a XMLHttpRequest-powered form.</li>
+                        <li>Server creates or updates a model object.</li>
+                        <li>Server generates a JavaScript response that includes the updated HTML template for the model.</li>
+                        <li>Client evaluates the JavaScript returned by the server, which then updates the DOM.</li>
+                    </ol>
+
+                    <p>This simple pattern has a number of key benefits.</p>
+
+                    <h3>Benefit #1: Reuse templates without sacrificing performance</h3>
+
+                    <p>You get to reuse the template that represents the model for both first-render and subsequent updates. In Rails, you’d have a partial like messages/message that’s used for both cases.</p>
+
+                    <p>If you only returned JSON, you’d have to implement your templates for showing that message twice (once for first-response on the server, once for subsequent-updates on the client) — unless you’re doing a single-page JavaScript app where even the first response is done with JSON/client-side generation.</p>
+
+                    <p>That latter model can be quite slow, since you won’t be able to display anything until your entire JavaScript library has been loaded and then the templates generated client-side. (This was the model that Twitter originally tried and then backed out of). But at least it’s a reasonable choice for certain situations and doesn’t require template duplication.</p>
+
+                    <!-- Also insert an example code snippet and figure with a figcaption -->
+
+                    
+                </article>
+
+                <nav class="arrows">
+                    <p><a href="">Older Posts</a></p>
+                    <p<a href="">>Newer Posts</a></p>
+                </nav>
+
+            </section>
+
+            <section class="products">
+                <p>From 37signals</p>
+
+                <div class="product-1">
+                    
+                </div>
+
+                <div class="product-2">
+                    
+                </div>
+            </aside>
+
+            
+
+            <footer class="main-footer">
+
+                <nav>
+                    <p>Explore 13 years of Signal vs. Noise<p>
+                        <ul>
+                            <li><a href="business" title="Business">Business</a></li>
+                            <li><a href="design" title="Design">Design</a></li>
+                            <li><a href="programming" title="Programming">Programming</a></li>
+                            <li><a href="support" title="Support">Support</a></li>
+                            <li><a href="sysadmin" title="SysAdmin">SysAdmin</a></li>
+                            <li><a href="writing" title="Writing">Writing</a></li>
+                            <li><a href="best" title="Best Of">Best Of</a></li>
+                            <li><a href="everything" title="Everything">Everything</a></li>
+                        </ul>
+                </nav>
+
+                <section class="hits">
+                    <div class="best-posts">
+                        
+                    </div>
+                    <div class="new-posts">
+                        
+                    </div>
+                </section>
+
+                <p>Want to learn how to design, code, and ship web apps with Ruby on Rails? Join The Starter League.</p>
+                <nav>Meet the writers of Signal vs. Noise. Follow 37signals on Twitter. Subscribe to our Newsletter and RSS.</nav>
+                <p>Content copyright &copy;1999-2014 37signals, LLC.</p>
+                <p>Happy Tuesday.</p>
+            </footer>
+
+
+        </div> <!-- .page-wrap -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
