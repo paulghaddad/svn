@@ -6,3 +6,7 @@
 p {
   @include font-size(1);
 }
+
+a {
+  color: $off-teal;
+}

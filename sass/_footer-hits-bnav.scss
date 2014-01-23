@@ -1,0 +1,24 @@
+footer {
+
+  .hits {
+    p {
+      span{
+        font-weight: bold;
+      }
+    }
+
+    ul {
+      padding: 0;
+      
+      li {
+        list-style-type: none;
+        padding: $pad/2 0;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,11 @@
+.arrows {
+  padding: $pad/2 5%;
+
+  .col-1-2 + .col-1-2 {
+    text-align: right;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

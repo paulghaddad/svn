@@ -1,0 +1,20 @@
+.main-header {
+
+  position: relative;
+
+  h1 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(../../img/logo.svg) no-repeat;
+    background-size: 100px 24px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    opacity: .6;
+  }
+  p, span {
+    display: none;
+  }
+}
