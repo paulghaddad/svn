@@ -1,11 +1,23 @@
 .post {
 
+  padding: 1rem 0 2.5rem 0;
+
   h1 {
     text-align: center;
     padding-top: 3rem;
     margin-top: 0;
+    margin-bottom: 2.25rem;
     background: url(../../img/business.png) no-repeat top center;
     background-size: 13rem;
+
+    @include font(acta);
+    @include font-size(1.75);
+    letter-spacing: -1px;
+    line-height: 1.25;
+    &:hover {
+      color: $off-teal;
+      text-decoration: underline;
+    }
 
     @include bp(delta) {
       padding-top: 3.75rem;
@@ -15,9 +27,23 @@
 
   h2 {
     text-align: center;
+    @include font-size(1);
+    color: $very-light-gray;
+  }
+
+  p {
+    margin: 0;
+    text-indent: 1rem;
+  }
+
+  h3 {
+    margin: 1rem 0 0 0;
   }
 
   h3, p, ul, ol, figure, figcaption {
+    line-height: 1.5;
+    @include font-size(1.1);
+
     @include bp(delta) {
       width: 40rem;
       margin: 1rem auto;

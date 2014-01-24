@@ -26,6 +26,13 @@
   h2 {
     display: inline-block;
     margin: 0;
+    @include font(prox);
+    @include font-size(1);
+    color: $off-teal;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
 
     @include bp(gamma) {
       font-size: .8rem;
