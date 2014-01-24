@@ -14,7 +14,41 @@
     margin: 0;
     opacity: .6;
   }
-  p, span {
+  p {
     display: none;
+    margin: 0;
+
+    @include bp(gamma) {
+        display: inline-block;
+      }    
+    }
+
+  h2 {
+    display: inline-block;
+    margin: 0;
+
+    @include bp(gamma) {
+      font-size: .8rem;
+      margin: 0 auto;
+      width: 70%;
+      text-align: center;
+    }
   }
+  
+  span {
+    display: none;
+    &.media-alpha {
+      @include bp(alpha) {
+        display: inline;
+      }
+    }
+
+    &.media-beta {
+      @include bp(beta) {
+        display: inline;
+      }
+    }
+
+  }
+
 }

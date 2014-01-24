@@ -18,6 +18,17 @@ layout: default
 
         <link rel="stylesheet" href="css/build/styles.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <script type="text/javascript">
+          (function(d) {
+            var config = {
+              kitId: 'kgc1yoz',
+              scriptTimeout: 3000
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+        </script>
+        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -29,7 +40,7 @@ layout: default
             <header class="main-header">
                 <h1>37signals</h1>
                 <p>Happy Tuesday.</p>
-                <h2><span>You're reading </span>Signal vs. Noise<span>, a publication about the web by 37signals since 1999.</span></h2>
+                <h2><span>You're reading </span>Signal vs. Noise<span class="media-beta">, a publication about the web</span> <span class="media-alpha">by 37signals</span><span> since 1999.</span></h2>
                 
             </header>
 
@@ -77,7 +88,7 @@ layout: default
 
             </section>
 
-            <section class="products module clearfix">
+            <section class="products clearfix">
                 <p>From 37signals</p>
 
                 <div class="product-1 col-1-2">
@@ -91,7 +102,7 @@ layout: default
 
             
 
-            <footer class="main-footer module">
+            <footer class="main-footer">
 
                 <nav>
                     <p>Explore 13 years of Signal vs. Noise<p>
@@ -107,7 +118,7 @@ layout: default
                         </ul>
                 </nav>
 
-                <section class="hits clearfix">
+                <section class="hits clearfix module">
                     <div class="best-posts col-1-2">
                         <p><span>New here?</span> Start with our hits:</p>
                         <ul>
@@ -130,7 +141,7 @@ layout: default
                     </div>
                 </section>
 
-                <section class="footer-bottom">
+                <section class="footer-bottom module">
                     <p>Want to learn how to design, code, and ship web apps with Ruby on Rails? Join The Starter League.</p>
                     <nav>Meet the writers of Signal vs. Noise. Follow 37signals on Twitter. Subscribe to our Newsletter and RSS.</nav>
                     <p>Content copyright &copy;1999-2014 37signals, LLC.</p>

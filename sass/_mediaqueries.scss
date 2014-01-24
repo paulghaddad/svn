@@ -1,8 +1,9 @@
 @mixin bp($point) {
   
-  $bp-alpha: "(min-width: 40rem)";
-  $bp-beta: "(min-width: 1250px)";
-  $bp-gamma: "(min-width: 1600px)";
+  $bp-alpha: "(min-width: 30rem)";
+  $bp-beta: "(min-width: 39rem)";
+  $bp-gamma: "(min-width: 44rem)";
+  $bp-delta: "(min-width: 49rem)";
 
   @if $point == alpha {
     @media #{$bp-alpha} { @content; }
@@ -11,7 +12,10 @@
     @media #{$bp-beta} { @content; }
   }
   @else if $point == gamma {
-    @media #{$bp-gamma}  { @content; }
+    @media #{$bp-gamma} { @content; }
+  }
+  @else if $point == delta {
+    @media #{$bp-delta}  { @content; }
   }
 
 }

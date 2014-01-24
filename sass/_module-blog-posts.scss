@@ -1,12 +1,27 @@
 .post {
-  padding: 1rem 5%;
 
   h1 {
     text-align: center;
+    padding-top: 3rem;
+    margin-top: 0;
+    background: url(../../img/business.png) no-repeat top center;
+    background-size: 13rem;
+
+    @include bp(delta) {
+      padding-top: 3.75rem;
+      background-size: 18rem;
+    }
   }
 
   h2 {
     text-align: center;
+  }
+
+  h3, p, ul, ol, figure, figcaption {
+    @include bp(delta) {
+      width: 40rem;
+      margin: 1rem auto;
+    }
   }
 
 }

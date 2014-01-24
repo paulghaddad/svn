@@ -1,12 +1,55 @@
+.wf-loading h1 {
+  font-family: "droid-sans";
+  visibility: hidden;
+}
+  .wf-active h1 {
+  visibility: visible;
+}
+
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 16) + px;
   font-size: $sizeValue + rem;
 }
 
-p {
+@mixin font($font) {
+  @if $font == prox-bold {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+  @else if $font == prox {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  @else if $font == acta {
+    font-family: "acta-display",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  @else if $font == kepler-italic {
+    font-family: "kepler-std",serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+  @else if $font == kepler-bold {
+    font-family: "kepler-std",serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+  @else {
+    font-family: "kepler-std",serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+body {
   @include font-size(1);
+  @include font(kepler);
 }
 
 a {
   color: $off-teal;
 }
+
