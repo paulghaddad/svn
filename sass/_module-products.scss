@@ -1,11 +1,38 @@
 .products {
 
-  p {
+  @include border;
+
+  > p {
     text-align: center;
+    text-transform: uppercase;
+    color: $charcoal;
+    letter-spacing: 1px;
+    @include font-size(1.05);
+    padding: 0 0 1rem 0;
+    @include border;
+    margin-top: 0;
   }
 
   div {
+    width: 90%;
+    margin: 0 5%;
     text-align: center;
+    @include font-size(1.1);
+    h2 {
+      @include font(prox-bold);
+      @include font-size(1.1);
+      margin-bottom: .25rem;
+    }
+    h3 {
+      @include font(prox-bold);
+      margin-bottom: .25rem;
+      @include font-size(1.1);
+    }
+    p {
+      @include font(prox);
+      margin-top: .1rem;
+    }
+
   }
 
   .product-1 {

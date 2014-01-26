@@ -1,24 +1,44 @@
 footer {
 
   .hits {
+    @include font(prox);
+    @include border;
+
     p {
+      @include font-size(1.1);
+      @include border;
+      padding-bottom: .8rem;
       span{
         font-weight: bold;
+        @include font(prox-bold);
       }
     }
 
     ul {
       padding: 0;
+      @include font-size(1);
       
       li {
         list-style-type: none;
-        padding: $pad/2 0;
+        padding: .6rem 0;
+        border-bottom: 1px lighten($charcoal, 50%) solid;
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+      a {
+        &:hover {
+          color: $dark-teal;
+          text-decoration: none;
+        }
       }
     }
   }
 
   .footer-bottom {
     text-align: center;
+    @include font(prox);
+    @include font-size(.8rem);
   }
 
 }

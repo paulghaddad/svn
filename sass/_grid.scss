@@ -15,7 +15,7 @@ body {
   padding: $pad;
 
   > section, > footer {
-      padding: $pad 5%;
+      padding: $pad 5% $pad*2 5%;
 
       @include bp(alpha) {
         padding: $pad 8%;
