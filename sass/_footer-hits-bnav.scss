@@ -2,7 +2,12 @@ footer {
 
   .hits {
     @include font(prox);
-    @include border;
+
+    .best-posts {
+      @include bp(gamma) {
+        padding-right: $pad*2;
+      }
+    }
 
     p {
       @include font-size(1.1);

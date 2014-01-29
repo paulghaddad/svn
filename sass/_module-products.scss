@@ -1,7 +1,5 @@
 .products {
 
-  @include border;
-
   > p {
     text-align: center;
     text-transform: uppercase;
@@ -14,7 +12,12 @@
   }
 
   div {
+    @include border;
     width: 90%;
+    @include bp(gamma) { 
+      width: 50%;
+      margin: 0;
+    }
     margin: 0 5%;
     text-align: center;
     @include font-size(1.1);
@@ -37,6 +40,9 @@
 
   .product-1 {
     padding-right: 0;
+    @include bp(gamma) {
+      padding-right: $pad;
+    }
   }
 
 }

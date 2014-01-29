@@ -24,5 +24,14 @@
     }
 }());
 
+// Equalize height of divs
+
+var maxHeight = 0;
+
+$(".products div").each(function(){
+   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+});
+
+$(".products div").height(maxHeight);
 
 

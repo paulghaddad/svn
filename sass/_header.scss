@@ -17,6 +17,8 @@
   p {
     display: none;
     margin: 0;
+    @include font(prox);
+    color: $light-gray;
 
     @include bp(gamma) {
         display: inline-block;
@@ -28,14 +30,15 @@
     margin: 0;
     @include font(prox);
     @include font-size(1);
-    color: $off-teal;
-    text-decoration: underline;
-    &:hover {
-      text-decoration: none;
-    }
+      a {
+        color: $off-teal;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
 
     @include bp(gamma) {
-      font-size: .8rem;
       margin: 0 auto;
       width: 70%;
       text-align: center;
