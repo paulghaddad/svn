@@ -30,14 +30,14 @@ layout: default
         </script>
 
     </head>
-    <body>
+    <body role="document">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div class="grid grid-pad">
             
-            <header class="main-header">
+            <header class="main-header" role="banner">
                 <h1>37signals</h1>
                 <p>Happy Tuesday.</p>
                 <h2><span>You're reading </span><a href="">Signal vs. Noise</a><span class="media-beta">, a publication about the web</span> <span class="media-alpha"><a href="">by 37signals</a></span><span> since 1999.</span></h2>
@@ -50,7 +50,7 @@ layout: default
                 <div class="col-1-3">Secondary Content</div>
             </div> -->
 
-            <section class="blog-posts">
+            <section class="blog-posts" role="main">
 
                 <article class="post module">
 
@@ -141,7 +141,7 @@ layout: default
 
             <footer class="main-footer">
 
-                <nav>
+                <nav role="navigation">
                     <p>Explore Signal vs. Noise</p>
                         <ul>
                             <li><a href="business" title="Business">Business</a></li>
@@ -155,7 +155,7 @@ layout: default
                         </ul>
                 </nav>
 
-                <section class="hits clearfix module">
+                <section class="hits clearfix module" role="complementary">
                     <div class="best-posts col-1-2">
                         <p><span>New here?</span> Start with our hits:</p>
                         <ul>
@@ -178,7 +178,7 @@ layout: default
                     </div>
                 </section>
 
-                <section class="footer-bottom module">
+                <section class="footer-bottom module" role="contentinfo">
                     <p>Want to learn how to design, code, and ship web apps with Ruby on Rails? Join The Starter League.</p>
                     <nav>Meet the writers of Signal vs. Noise. Follow 37signals on Twitter. Subscribe to our Newsletter and RSS.</nav>
                     <p>Content copyright &copy;1999-2014 37signals, LLC.</p>

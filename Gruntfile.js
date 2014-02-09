@@ -83,7 +83,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'watch']);
+  // Need to manually run imagemin
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'watch']);
  
 
 };
