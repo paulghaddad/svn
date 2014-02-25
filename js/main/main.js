@@ -34,8 +34,3 @@ $(".products div").each(function(){
 
 $(".products div").height(maxHeight);
 
-// Practice Code
-
-$("document").ready(function() {
-    alert("The page just loaded!");
-});

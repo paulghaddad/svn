@@ -1,10 +1,10 @@
 .wf-loading h1 {
-  font-family: "droid-sans";
-  visibility: hidden;
-}
+    font-family: "droid-sans";
+    visibility: hidden;
+  }
   .wf-active h1 {
-  visibility: visible;
-}
+    visibility: visible;
+  }
 
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 16) + px;
